@@ -1,4 +1,4 @@
-# This is a LaTeX template for my CV.
+# This is the LaTeX template for my CV.
 
 Version 1.0 (24/3/13), original  
 Version 1.1 (4/6/13), modified by Fernando Paolo
