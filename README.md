@@ -1,16 +1,31 @@
 # This is a LaTeX template for my CV.
 
-The credits for this template and all the instructions on how to
-install the non-standard fonts used in this document, as well as
-its compilation with XeTeX (`xelatex` instead of `pdflatex`), are 
-in the *header* of the source code:
+Version 1.0 (24/3/13), original  
+Version 1.1 (4/6/13), modified by Fernando Paolo
 
-   paolo_cv.tex
+V1.0 of this template has been downloaded from:
+    http://www.LaTeXTemplates.com
 
-To compile:
+### History
 
-    ### bash
-    xelatex -output-driver=xdv2pdf paolo_cv.tex
+Original by Alessandro Plasmati (alessandro.plasmati@gmail.com)  
+Modified by Fernando Paolo (fspaolo@gmail.com)
+
+### Important notes
+
+This template needs to be compiled with XeLaTeX.
+The main document font is called Fontin and can be downloaded for 
+free from here: http://www.exljbris.com/fontin.html.
+
+To intall the fonts on Mac OS X open the `Font Book` and drag 
+the folder `Fontin` to it.
+
+Appears to be a problem with the *default* output driver `xdvipdfmx` 
+and the Fontin fonts. So to compile the `.tex` use istead `xdv2pdf`:
+
+    xelatex -output-driver=xdv2pdf file.tex
+
+See http://www.tug.org/pipermail/xetex/2008-January/008163.html
 
 
--fernando
+--fernando
