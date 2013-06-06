@@ -1,0 +1,325 @@
+% encoding: utf-8
+%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+% Modified by Fernando Paolo (4/6/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% History:
+% Original by Alessandro Plasmati (alessandro.plasmati@gmail.com)
+% Modified by Fernando Paolo (fspaolo@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for 
+% free from here: http://www.exljbris.com/fontin.html.
+% 
+% To intall the fonts on Mac OS X open the `Font Book` and drag 
+% the folder `Fontin` to it.
+%
+% Appears to be a problem with the *default* output driver `xdvipdfmx` 
+% and the Fontin fonts. So to compile use istead `xdv2pdf`:
+%
+%   xelatex -output-driver=xdv2pdf thisfile.tex
+%
+% See http://www.tug.org/pipermail/xetex/2008-January/008163.html
+%
+
+%-------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------------------------------
+
+% Default font size and paper size
+\documentclass[a4paper,11pt]{article} 
+
+% For loading fonts
+\usepackage{fontspec} 
+\defaultfontfeatures{Mapping=tex-text}
+% Main document font
+\setmainfont[SmallCapsFont=Fontin SmallCaps,
+             ItalicFont=Fontin Italic,
+             BoldFont=Fontin Bold]{Fontin} 
+
+% Formatting packages
+\usepackage{xunicode,xltxtra,url,parskip} 
+
+% Required for specifying custom colors
+\usepackage[usenames,dvipsnames]{xcolor} 
+
+% Margin formatting of the A4 page
+%\usepackage[big]{layaureo} 
+% An alternative to layaureo can be 
+\usepackage{fullpage}
+% To reduce the height of the top margin uncomment: 
+%\addtolength{\voffset}{-1.3cm}
+
+% Required for adding links and customizing them
+\usepackage{hyperref} 
+% Link color
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} 
+% Set link colors throughout the document
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} 
+
+% Used to customize the \section command
+\usepackage{titlesec} 
+% Text formatting of sections
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] 
+% Spacing around sections
+\titlespacing{\section}{0pt}{3pt}{3pt} 
+
+\begin{document}
+
+% Removes page numbering
+\pagestyle{empty} 
+
+% Change the font of the \LaTeX command under the skills section
+%\font\fb=''[cmr10]'' 
+
+%-------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%-------------------------------------------------------------------------------
+
+\par{\centering{\Huge Fernando S. \textsc{Paolo}}\bigskip\par} % Your name
+
+\section{Contact Info}
+
+\begin{tabular}{rl}
+\textsc{Institution:} & University of California, San Diego \\
+\textsc{Address:} & 9500 Gilman Dr, La Jolla, 92093 \\
+\textsc{Phone:} & +1 (858) 534-9643\\
+\textsc{Email:} & \href{mailto:fpaolo@ucsd.edu}{fpaolo@ucsd.edu} \\
+\textsc{Website:} & \href{http://fspaolo.net}{fspaolo.net}
+\end{tabular}
+
+%-------------------------------------------------------------------------------
+%	EDUCATION
+%-------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{l}
+Ph.D. \textsc{Earth Sciences}, \textbf{Scripps Institution of Oceanography}, Univ. of California, SD (\emph{Ongoing})\\
+M.S. \textsc{Geophysics} (w/honors), University of S\~ao Paulo, Brazil 2009\\
+B.S. \textsc{Oceanography} (w/honors), University of S\~ao Paulo, Brazil 2007\\
+Tech. \textsc{Graphic Arts}, Municipal School of Tech. Education, Argentina 1996\\
+\end{tabular}
+
+%-------------------------------------------------------------------------------
+%	RESEARCH INTERESTS
+%-------------------------------------------------------------------------------
+
+\section{Research Interests}
+
+\begin{tabular}{p{.95\textwidth}}
+Satellite remote sensing of ice sheets, ice-ocean-atmosphere interaction, ice-shelf/sheet mass balance, climate change | Radar and laser altimetry, radar interferometry and imagery, processing and analysis of big data.
+\end{tabular}
+
+%-------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%-------------------------------------------------------------------------------
+
+\section{Research Experience}
+
+\begin{tabular}{r|p{12.4cm}}
+\emph{Current} & \textsc{Doctoral Dissertation} at \textsc{ucsd} \\
+2010--\textsc{Present} & \small{Interannual and decadal variations of Antarctic ice shelves using multi-mission satellite radar altimetry, and links with oceanic and atmospheric forcings.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+2007--2009 & \textsc{Master's Thesis} at \textsc{usp}\\
+& \small{Satellite altimetry and marine gravity on the integrated representation of the gravity field in the Brazilian coast.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+2004--2006 & \textsc{Bachelor's Thesis} at \textsc{usp}\\
+& \small{Characterization of bottom morphodynamics of Canan\'eia estuary by shallow seismic profiling and side scan sonar.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+2003--2004 & \textsc{Undergraduate Research} at \textsc{usp}\\
+& \small{Study on hydrocarbon concentrations in water and sediment from King George Island, Antarctica (\emph{including field work}).}
+\end{tabular}
+
+%-------------------------------------------------------------------------------
+%	FIELD EXPERIENCE
+%-------------------------------------------------------------------------------
+
+\section{Field Experience}
+
+\begin{tabular}{rl}
+\textsc{Dec} 2004 & RV \emph{P.W. Besnard}, Geophysical and Geological Survey, Brazil coast \footnotesize{(12 days at sea)}\\
+\textsc{Jan} 2004 & Brazilian Antarctic Research Station \emph{Comandante Ferraz} \footnotesize{(30 days in Antarctica)}\\
+\textsc{Dec} 2003 & RB \emph{Escuna}, Environmental Monitoring Program, Bahia, Brazil \footnotesize{(14 days at sea)}\\
+\textsc{Jan} 2003 & RV \emph{P.W. Besnard}, Oceanographic Moorings II, Brazil coast \footnotesize{(8 days at sea)}\\
+\textsc{Jul} 2002 & RV \emph{P.W. Besnard}, Oceanographic Moorings I, Brazil coast \footnotesize{(9 days at sea)}
+\end{tabular}
+
+%-------------------------------------------------------------------------------
+%	TEACHING EXPERIENCE
+%-------------------------------------------------------------------------------
+
+\section{Teaching Experience}
+
+\begin{tabular}{rl}
+\textsc{Aug--Dec} 2008 & Computing for Geophysicists, TA at University of S\~ao Paulo\\
+\textsc{Mar--Jul} 2008 & Introduction to Geophysics, TA at University of S\~ao Paulo
+\end{tabular}
+
+%-------------------------------------------------------------------------------
+%	SKILLS 
+%-------------------------------------------------------------------------------
+
+\section{Some Skills}
+
+\begin{tabular}{rl}
+\textsc{Programming:} & Python, C/C++, Fortran 90/95, Shell-Script, \textsc{html}/\textsc{css}/JavaScript\\
+\textsc{Softwares:} & \textsc{unix}/Mac/\textsc{Linux}, \textsc{vtk}/VisIt/Paraview, \textsc{gmt}, \textsc{Matlab}, \textsc{gis}, \LaTeX, \textsc{vim}, etc.\\
+\textsc{Languages:} & English (fluent), Portuguese (native), Spanish (native)
+\end{tabular}
+
+%-------------------------------------------------------------------------------
+%	AWARDS AND HONORS
+%-------------------------------------------------------------------------------
+
+\section{Awards and Honors}
+
+\begin{tabular}{rl}
+2012, 2013 & \textsc{nasa} Earth and Space Science Fellowship (\textsc{nessf})\\ 
+2011 & \textsc{aaaspd} Student Award (1\textsuperscript{st} place), Atmospheric and Oceanographic Sciences\\
+2010 & \textsc{agu} Outstanding Student Paper Award, Cryosphere\\
+2010 & Honor Mention (best M.S. Thesis in geophysics), University of S\~ao Paulo\\
+2008 & TA Fellowship (M.S.), Brazilian Ministry of Education\\
+2007, 2008 & Graduate Fellowship (M.S.), Brazilian Ministry of Science and Technology\\
+2007 & Honor Mention (2\textsuperscript{nd} best B.S. Thesis), University of S\~ao Paulo\\
+2005, 2006 & Undergrad. Fellowship, S\~ao Paulo Research Foundation\\
+2004 & Undergrad. Fellowship, Brazilian Ministry of Science and Technology
+\end{tabular}
+
+%-------------------------------------------------------------------------------
+%	PUBLICATIONS
+%-------------------------------------------------------------------------------
+
+\section{Publications}
+
+%\subsection*{Journal Articles}
+\emph{Journal Articles}
+
+%\begin{small}
+\begin{enumerate}
+  \item [3.] {\bf Paolo, F.S.} and E.C. Molina (2010), Integrated marine 
+        gravity field in the Brazilian coast from altimeter-derived sea 
+        surface gradient and shipborne gravity. {\it J. Geodyn.}, 50, 347-354,\\
+        doi:10.1016/j.jog.2010.04.003.
+  \item [2.] B\'icego, M.C., E. Zanardi-Lamardo, S. Taniguchi, C.C. Martins, 
+        D.A.M. da Silva, S.T. Sasaki, A.C.R. Albergaria-Barbosa, {\bf F.S. 
+        Paolo}, R.R. Weber and R.C. Montone (2009), Results from a 15-year 
+        study on hydrocarbon concentrations in water and sediment from 
+        Admiralty Bay, King George Island, Antarctica. {\it Antarct. Sci.}, 
+        21, 209-220, doi:10.1017/S0954102009001734.
+  \item [1.] {\bf Paolo, F.S.} and M.M. Mahiques (2008), Utilization of 
+        acoustic methods in coastal dynamics studies: example in the 
+        Canan\'eia lagoonal mouth. {\it Braz. J. Geophys.}, 26(2), 211-225, 
+        doi:10.1590/S0102-261X2008000200008.
+\end{enumerate}
+%\end{small}
+
+%-------------------------------------------------------------------------------
+%	INVITED TALKS
+%-------------------------------------------------------------------------------
+
+\section{Invited Talks}
+
+\begin{tabular}{rl}
+14 \textsc{Jun} 2011 & Elevation changes on Antarctic ice shelves, \textsc{aaas} Pacific Division, 92\textsuperscript{nd} Annual\\ 
+& Meeting, San Diego.
+\end{tabular}
+
+%-------------------------------------------------------------------------------
+%	INTERESTS AND ACTIVITIES
+%-------------------------------------------------------------------------------
+
+%\section{Other Interests and Activities}
+%
+%Technology, Open-Source, Programming\\
+%Paradoxes in Decision Making, Psychoanalysis, Behavioural Finance\\
+%Football, Travelling
+
+%-------------------------------------------------------------------------------
+%       FOOTER
+%-------------------------------------------------------------------------------
+
+\bigskip
+\begin{center}
+  \begin{footnotesize}
+  \textcolor[gray]{0.5}{Last updated: \today}\\
+  \end{footnotesize}
+\end{center}
+
+\newpage
+
+%-------------------------------------------------------------------------------
+%	GRADE TABLES
+%-------------------------------------------------------------------------------
+
+%\par{\centering\Large \hypertarget{grds}{Master of Science in \textsc{Finance}}\par}\large{\centering Grades\par}\normalsize
+%
+%\begin{center}
+%\begin{tabular}{lcc}
+%\multicolumn{1}{c}{\textsc{Exam}} & \textsc{Grade}&\textsc{Credit Hrs}\\ \hline
+%Corporate Finance (Valuation) & 25 & 6\\
+%Financial Statement Analysis & 28 & 6\\
+%Statistics & 27 & 6\\
+%Theory of Finance & 26 & 6\\
+%Quantitative Methods for Finance & 30 & 6\\
+%Econometrics & 24 & 6\\
+%Derivatives & 31 & 6\\
+%Management of Financial and Insurance Companies & 30 & 6\\
+%Business Law & 31 & 6\\
+%Investment Banking	& 28 & 6\\ \\		
+%Behavioral Models for Economics and Finance	 & 29 & 6\\
+%Numerical Methods for Finance & 29 & 6\\
+%Advanced Derivatives & 30 & 6\\
+%Fixed Income (Advanced Methods) & 30 & 6\\ \\
+%English Language & 30 &	4\\
+%French Language & 31 &	4\\	
+%Internship & & 8\\		
+%Final Thesis & & 20\\	
+%& Total & 120\\\cline{2-3}
+%&\textsc{Gpa}&\textbf{8.0}
+%\end{tabular}
+%\end{center}
+%\bigskip
+%\hrule
+%\bigskip
+%
+%%------------------------------------------------
+%
+%\bigskip
+%
+%\par{\centering\Large \hypertarget{grds_usc}{Exchange Program at \textsc{usc}, Los Angeles}\par}\large{\centering Grades\par}\normalsize
+%
+%\begin{center}
+%\begin{tabular}{lcc}
+%\multicolumn{1}{c}{\textsc{Exam}} & \textsc{Grade} & \textsc{Grade Points}\\ 
+%\hline
+%Corporate Financial Strategy & A & 4\\
+%Derivatives & A & 4\\
+%Money, Credit, and Banking & A & 4\\
+%Business Strategy & A- & 3.5\\
+%& &\\\cline{2-3}
+%& \textsc{Gpa} & \textbf{3.875}
+%\end{tabular}
+%\end{center}
+%
+%-------------------------------------------------------------------------------
+
+\end{document}
