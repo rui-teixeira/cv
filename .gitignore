@@ -2,7 +2,7 @@ currvita
 examples
 old
 old2
+.gitignore
 *.log
 *.aux
 *.out
-
