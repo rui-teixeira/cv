@@ -28,4 +28,4 @@ and the Fontin fonts. So to compile the `.tex` use istead `xdv2pdf`:
 See http://www.tug.org/pipermail/xetex/2008-January/008163.html
 
 
---fernando
+-fernando
