@@ -1,10 +1,9 @@
-# This is the LaTeX template for my CV
+# LaTeX template for my CV
 
 Version 1.0 (24/3/13), original  
 Version 1.1 (4/6/13), modified by Fernando Paolo
 
-V1.0 of this template has been downloaded from:
-    http://www.LaTeXTemplates.com
+V1.0 of this template has been downloaded from: http://www.LaTeXTemplates.com
 
 ### History
 
@@ -17,7 +16,7 @@ This template needs to be compiled with XeLaTeX.
 The main document font is called Fontin and can be downloaded for 
 free from here: http://www.exljbris.com/fontin.html.
 
-To intall the fonts on Mac OS X open the `Font Book` and drag 
+To intall the fonts on Mac OS X open the Font Book app and drag 
 the folder `Fontin` to it.
 
 Appears to be a problem with the *default* output driver `xdvipdfmx` 
