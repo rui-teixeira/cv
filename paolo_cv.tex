@@ -3,6 +3,7 @@
 % LaTeX Template
 % Version 1.0 (24/3/13), original
 % Version 1.1 (4/6/13), modified by Fernando Paolo
+% Version 1.2 (3/1/15), modified by Fernando Paolo
 %
 % V1.0 of this template has been downloaded from:
 % http://www.LaTeXTemplates.com
@@ -34,7 +35,7 @@
 %
 % Alternatively, to compile using the standard 'pdflatex' with the Times 
 % fonts, comment the lines marked with 'xdv2pdf', and uncomment the ones 
-% with 'pdflatex'. Then just:
+% with 'pdflatex'. Then just run:
 %
 %   pdflatex paolo_cv.tex
 
@@ -50,8 +51,8 @@
 \defaultfontfeatures{Mapping=tex-text}        % xdv2pdf
 % Main document font
 \setmainfont[SmallCapsFont=Fontin SmallCaps,  % xdv2pdf
-             ItalicFont=Fontin Italic,
-             BoldFont=Fontin Bold]{Fontin} 
+             ItalicFont=Fontin Italic,        % xdv2pdf
+             BoldFont=Fontin Bold]{Fontin}    % xdv2pdf
 % Alternative fonts if Fontin is not available
 %\usepackage{times}                           % pdflatex
 
@@ -62,7 +63,7 @@
 \usepackage[usenames,dvipsnames]{xcolor} 
 
 % Margin formatting of the A4 page
-\usepackage[scale=0.8]{geometry}
+\usepackage[bottom=2cm, top=2cm, right=2cm, left=2cm]{geometry}
 %\usepackage[big]{layaureo} 
 % An alternative to layaureo can be 
 %\usepackage{fullpage}
@@ -78,8 +79,9 @@
 
 % Used to customize the \section command
 \usepackage{titlesec} 
-% Text formatting of sections
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] 
+% Text formatting of sections (uncomment for title rule)
+%\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] 
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}
 % Spacing around sections
 \titlespacing{\section}{0pt}{3pt}{3pt} 
 
@@ -106,7 +108,7 @@ Fernando S. \textsc{Paolo}
 }\\[0.2cm]
 %
 \textcolor{grey}{
-9160 Regents Rd Apt D \tdash 
+3911 Miramar St Apt D \tdash 
 La Jolla CA 92037 \tdash
 USA
 }\\[0.01cm]
@@ -134,10 +136,11 @@ USA
 \section{Education}
 
 \begin{tabular}{l}
-Ph.D. \textsc{Geophysics}, \textbf{Scripps Institution of Oceanography}, Univ. of California, SD (\emph{Ongoing})\\
+Ph.D. \textsc{Geophysics}, \textbf{Scripps Institution of Oceanography}, Univ.
+    of California, SD (\emph{this Sep 2, 2015})\\
 M.S. \textsc{Geophysics} (w/honors), University of S\~ao Paulo, Brazil 2009\\
 B.S. \textsc{Oceanography} (w/honors), University of S\~ao Paulo, Brazil 2007\\
-Tech. \textsc{Graphic Arts}, Municipal School of Tech. Education, Argentina 1996\\
+Tech. \textsc{Graphic Arts}, Muni. School of Tech. Education, Argentina 1996\\
 \end{tabular}
 
 %-------------------------------------------------------------------------------
@@ -147,7 +150,7 @@ Tech. \textsc{Graphic Arts}, Municipal School of Tech. Education, Argentina 1996
 \section{Interests}
 
 \begin{tabular}{p{.95\textwidth}}
-Satellite remote sensing of ice sheets, ice-ocean-atmosphere interaction, ice-shelf/sheet mass balance, climate change ~|~ Radar and laser altimetry, radar interferometry and imagery, processing and analysis of big data.
+Satellite remote sensing, ice-ocean-atmosphere interaction, ice-shelf/ice-sheet mass balance, climate change ~|~ Radar and laser altimetry, radar interferometry and imagery ~|~ Processing and analysis of large-scale data, image processing, statistical modeling and time-series analysis.
 \end{tabular}
 
 %-------------------------------------------------------------------------------
@@ -170,7 +173,7 @@ Satellite remote sensing of ice sheets, ice-ocean-atmosphere interaction, ice-sh
 %------------------------------------------------
 
 2004--2006 & \textsc{Bachelor's Thesis} at \textsc{usp}\\
-& \small{Characterization of bottom morphodynamics of Canan\'eia estuary by shallow seismic profiling and side scan sonar.}\\
+& \small{Characterization of bottom morphodynamics of Canan\'eia estuary by shallow seismic profiling and side-scan sonar.}\\
 \multicolumn{2}{c}{} \\
 
 %------------------------------------------------
@@ -211,7 +214,8 @@ Satellite remote sensing of ice sheets, ice-ocean-atmosphere interaction, ice-sh
 \section{Awards and Honors}
 
 \begin{tabular}{rl}
-2012, 2013 & \textsc{nasa} Earth and Space Science Fellowship (\textsc{nessf})\\ 
+2014 & \textsc{agu} Outstanding Student Paper Award, Cryosphere\\
+2012, 2013, 2014 & \textsc{nasa} Earth and Space Science Fellowship (\textsc{nessf})\\ 
 2011 & \textsc{aaaspd} Student Award (1\textsuperscript{st} place), Atmospheric and Oceanographic Sciences\\
 2010 & \textsc{agu} Outstanding Student Paper Award, Cryosphere\\
 2010 & Honor Mention (best M.S. Thesis in geophysics), University of S\~ao Paulo\\
@@ -230,12 +234,12 @@ Satellite remote sensing of ice sheets, ice-ocean-atmosphere interaction, ice-sh
 
 \begin{tabular}{rl}
 \textsc{~~~~Programming:} & Python, C/C++, Fortran 90/95, Shell-Script, \textsc{html}/\textsc{css}/JavaScript\\
-\textsc{Softwares:} & \textsc{unix}/Mac/\textsc{Linux}, \textsc{vtk}/VisIt/ParaView, \textsc{gmt}, \textsc{Matlab}, \textsc{gis}, \LaTeX, \textsc{vim}, etc.\\
+\textsc{Software:} & \textsc{unix}/Mac/\textsc{Linux}, \textsc{vtk}/ParaView, \textsc{gmt}, \textsc{Matlab}, \textsc{gis}, \LaTeX, git, \textsc{vim}, etc.\\
 \textsc{Languages:} & English (fluent), Portuguese (native), Spanish (native)
 \end{tabular}
 
 \begin{tabular}{rp{12.4cm}}
-\textsc{Communication:} & {\small Received training in Public Speaking \& Leadership ~|~ Presented 5 talks and 5 posters at (inter)national meetings ~|~ Edited lab grants and proposals ~|~ Reviewer for {\it Journal of Glaciology} and {\it The Cryosphere Discussion} ~|~ Organized 2 institutional seminar series ~|~ Developed and maintain 3 websites: lab, conference and personal}
+\textsc{Communication:} & {\small Received training in Public Speaking \& Leadership ~|~ Presented 6 talks and 5 posters at (inter)national meetings ~|~ Edited lab grants and proposals ~|~ Reviewer for {\it Journal of Glaciology} and {\it The Cryosphere Discussion} ~|~ Organized 2 institutional seminar series ~|~ Developed and maintain 3 websites: lab, conference and personal}
 \end{tabular}
 
 %-------------------------------------------------------------------------------
@@ -248,19 +252,27 @@ Satellite remote sensing of ice sheets, ice-ocean-atmosphere interaction, ice-sh
 \emph{Journal Articles}
 
 \begin{enumerate}
-  \item [3.] {\bf Paolo, F.S.} and E.C. Molina (2010), Integrated marine 
+  \item [5.] P. R. Holland, A. Brisbourne, H. F. J. Corr, D. McGrath, K. Purdon, 
+        J. Paden, H. A. Fricker, {\bf F. S. Paolo}, A. Fleming, Oceanic and 
+        atmospheric forcing of Larsen C Ice Shelf thinning, {\it The Cryosphere}, 
+        in press (2015).
+  \item [4.] {\bf F. S. Paolo}, H.A. Fricker, L. Padman, Volume loss 
+        from Antarctic ice shelves is accelerating, {\it Science}, in press (2015).\\
+        doi:10.1126/science.aaa0940
+  \item [3.] {\bf F. S. Paolo}, E. C. Molina, Integrated marine 
         gravity field in the Brazilian coast from altimeter-derived sea 
-        surface gradient and shipborne gravity. {\it J. Geodyn.}, 50, 347-354.\\
+        surface gradient and shipborne gravity, {\it J. Geodyn.}, 50, 347-354 (2010).\\
         doi:10.1016/j.jog.2010.04.003
-  \item [2.] B\'icego, M.C., E. Zanardi-Lamardo, S. Taniguchi, C.C. Martins, 
-        D.A.M. da Silva, S.T. Sasaki, A.C.R. Albergaria-Barbosa, {\bf F.S. 
-        Paolo}, R.R. Weber and R.C. Montone (2009), Results from a 15-year 
+  \item [2.] M. C. B\'icego, E. Zanardi-Lamardo, S. Taniguchi, C. C. Martins, 
+        D. A. M. da Silva, S. T. Sasaki, A. C. R. Albergaria-Barbosa, {\bf F. S. 
+        Paolo}, R. R. Weber, R. C. Montone, Results from a 15-year 
         study on hydrocarbon concentrations in water and sediment from 
-        Admiralty Bay, King George Island, Antarctica. {\it Antarct. Sci.}, 
-        21, 209-220. doi:10.1017/S0954102009001734
-  \item [1.] {\bf Paolo, F.S.} and M.M. Mahiques (2008), Utilization of 
+        Admiralty Bay, King George Island, Antarctica, {\it Antarct. Sci.}, 
+        21, 209-220 (2009).\\
+        doi:10.1017/S0954102009001734
+  \item [1.] {\bf F. S. Paolo}, M. M. Mahiques, Utilization of 
         acoustic methods in coastal dynamics studies: example in the 
-        Canan\'eia lagoonal mouth. {\it Braz. J. Geophys.}, 26(2), 211-225.\\
+        Canan\'eia lagoonal mouth, {\it Braz. J. Geophys.}, 26(2), 211-225 (2008).\\
         doi:10.1590/S0102-261X2008000200008
 \end{enumerate}
 
@@ -323,9 +335,9 @@ Satellite remote sensing of ice sheets, ice-ocean-atmosphere interaction, ice-sh
 
 \begin{small}
 \begin{tabular}{p{.95\textwidth}}
-Dr Helen A. Fricker, Remote Sensisng and Glaciology, UC San Diego...\\
-Dr Laurie Padman, Physical Oceanography, Earth \& Space Research...\\
-Dr David T. Sandwell, Remote Sensing and Geodesy, UC San Diego...  
+Dr Helen A. Fricker, Remote Sensisng and Glaciology, UC San Diego, hafricker@ucsd.edu\\
+Dr Laurie Padman, Physical Oceanography, Earth \& Space Research, padman@esr.org\\
+Dr David T. Sandwell, Remote Sensing and Geodesy, UC San Diego, dsandwell@ucsd.edu
 \end{tabular}
 \end{small}
 
