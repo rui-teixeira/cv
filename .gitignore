@@ -6,3 +6,4 @@ old2
 *.log
 *.aux
 *.out
+*.data_incubator*
