@@ -49,10 +49,12 @@
 % For loading fonts
 \usepackage{fontspec}                         % xdv2pdf
 \defaultfontfeatures{Mapping=tex-text}        % xdv2pdf
+
 % Main document font
 \setmainfont[SmallCapsFont=Fontin SmallCaps,  % xdv2pdf
              ItalicFont=Fontin Italic,        % xdv2pdf
              BoldFont=Fontin Bold]{Fontin}    % xdv2pdf
+
 % Alternative fonts if Fontin is not available
 %\usepackage{times}                           % pdflatex
 
@@ -63,25 +65,21 @@
 \usepackage[usenames,dvipsnames]{xcolor} 
 
 % Margin formatting of the A4 page
-\usepackage[bottom=2cm, top=2cm, right=2cm, left=2cm]{geometry}
+\usepackage[bottom=1cm, top=2.5cm, right=2.5cm, left=2cm]{geometry}
+
 %\usepackage[big]{layaureo} 
 % An alternative to layaureo can be 
 %\usepackage{fullpage}
 % To reduce the height of the top margin uncomment: 
 %\addtolength{\voffset}{-1.3cm}
 
-% Required for adding links and customizing them
-\usepackage{hyperref} 
-% Link color
-\definecolor{linkcolour}{rgb}{0,0.2,0.6} 
-% Set link colors throughout the document
-\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} 
-
 % Used to customize the \section command
 \usepackage{titlesec} 
+
 % Text formatting of sections (uncomment for title rule)
 %\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] 
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}
+
 % Spacing around sections
 \titlespacing{\section}{0pt}{3pt}{3pt} 
 
@@ -89,6 +87,30 @@
 \definecolor{grey}{rgb}{0.35,0.35,0.35}
 \newcommand*{\tbullet}{~\strut\textcolor{grey}{\LARGE\textbullet}~~}
 \newcommand*{\tdash}{\strut\textcolor{grey}{\textemdash}~}
+
+% Microtype
+%\usepackage[
+%activate={true,nocompatibility},
+%final,
+%tracking=true,
+%kerning=true,
+%spacing=true,
+%factor=1100,
+%stretch=10,
+%shrink=10
+%]{microtype}
+% activate={true,nocompatibility} - activate protrusion and expansion
+% final - enable microtype; use "draft" to disable
+% tracking=true, kerning=true, spacing=true - activate these techniques
+% factor=1100 - add 10% to the protrusion amount (default is 1000)
+% stretch=10, shrink=10 - reduce stretchability/shrinkability (default is 20/20)
+
+% Required for adding links and customizing them
+\usepackage{hyperref} 
+% Link color
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} 
+% Set link colors throughout the document
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} 
 
 \begin{document}
 
@@ -108,8 +130,8 @@ Fernando S. \textsc{Paolo}
 }\\[0.2cm]
 %
 \textcolor{grey}{
-3911 Miramar St Apt D \tdash 
-La Jolla CA 92037 \tdash
+739 Paularino Ave. Apt. A103 \tdash 
+Costa Mesa CA 92626 \tdash
 USA
 }\\[0.01cm]
 %
@@ -136,11 +158,11 @@ USA
 \section{Education}
 
 \begin{tabular}{l}
-Ph.D. \textsc{Geophysics}, \textbf{Scripps Oceanography}, University
+Ph.D. Geophysics, \textbf{Scripps Oceanography}, University
     of California, San Diego (\emph{Sep 2, 2015})\\
-M.S. \textsc{Geophysics} (w/honors), University of S\~ao Paulo, Brazil 2009\\
-B.S. \textsc{Oceanography} (w/honors), University of S\~ao Paulo, Brazil 2007\\
-Tech. \textsc{Graphic Arts}, Muni. School of Tech. Education, Argentina 1996\\
+M.S. Geophysics (w/honors), University of S\~ao Paulo, Brazil 2009\\
+B.S. Oceanography (w/honors), University of S\~ao Paulo, Brazil 2007\\
+%Tech. Graphic Arts, Muni. School of Tech. Education, Argentina 1996\\
 \end{tabular}
 
 %-------------------------------------------------------------------------------
@@ -149,8 +171,8 @@ Tech. \textsc{Graphic Arts}, Muni. School of Tech. Education, Argentina 1996\\
 
 \section{Interests}
 
-\begin{tabular}{p{.95\textwidth}}
-Satellite remote sensing, ice-ocean-atmosphere interaction, ice-shelf/ice-sheet mass balance, climate change ~|~ Radar and laser altimetry, radar interferometry and imagery ~|~ Processing and analysis of large-scale data, image processing, statistical modeling and time-series analysis.
+\begin{tabular}{p{\textwidth}}
+Satellite remote sensing, ice-ocean-atmosphere interaction, ice-shelf/ice-sheet mass balance, climate change ~|~ Radar and laser altimetry, radar interferometry and imagery ~|~ Processing and analysis of large-scale data sets, image processing, statistical modeling and time-series analysis
 \end{tabular}
 
 %-------------------------------------------------------------------------------
@@ -159,28 +181,137 @@ Satellite remote sensing, ice-ocean-atmosphere interaction, ice-shelf/ice-sheet 
 
 \section{Research}
 
-\begin{tabular}{r|p{12.4cm}}
-\emph{Current} & \textsc{Doctoral Dissertation} at \textsc{ucsd} \\
-2010--\textsc{Present} & \small{Interannual and decadal variations of Antarctic ice shelves using multi-mission satellite radar altimetry, and links with oceanic and atmospheric forcings.}\\
+\begin{tabular}{r|p{.85\textwidth}}
+\emph{Current} & \textsc{Doctoral Dissertation} \\
+2009--15 & {Interannual and decadal variations of Antarctic ice shelves using multi-mission satellite radar altimetry, and links with oceanic and atmospheric forcings.}\\
+\multicolumn{2}{c}{} \\  % for blank line
+
+%------------------------------------------------
+
+2007--08 & \textsc{Master's Thesis} \\
+& {Satellite altimetry and marine gravity on the integrated representation of the gravity field along the Brazilian coast.}\\
 \multicolumn{2}{c}{} \\
 
 %------------------------------------------------
 
-2007--2009 & \textsc{Master's Thesis} at \textsc{usp}\\
-& \small{Satellite altimetry and marine gravity on the integrated representation of the gravity field in the Brazilian coast.}\\
-\multicolumn{2}{c}{} \\
+2004--06 & \textsc{Bachelor's Thesis} \\
+& {Characterization of bottom morphodynamics of Canan\'eia estuary by shallow seismic profiling and side-scan sonar.} \\
+%\multicolumn{2}{c}{}
 
 %------------------------------------------------
 
-2004--2006 & \textsc{Bachelor's Thesis} at \textsc{usp}\\
-& \small{Characterization of bottom morphodynamics of Canan\'eia estuary by shallow seismic profiling and side-scan sonar.}\\
-\multicolumn{2}{c}{} \\
-
-%------------------------------------------------
-
-2003--2004 & \textsc{Undergraduate Research} at \textsc{usp}\\
-& \small{Study on hydrocarbon concentrations in water and sediment from King George Island, Antarctica (\emph{including fieldwork}).}
+%2003--04 & \textsc{Undergraduate Research} \\
+%& {Study on hydrocarbon concentrations in water and sediment from King George Island, Antarctica (\emph{including fieldwork}).}
 \end{tabular}
+
+%-------------------------------------------------------------------------------
+%	SKILLS 
+%-------------------------------------------------------------------------------
+
+\section{Skills}
+
+\begin{tabular}{rp{.78\textwidth}}
+\textsc{Programming:} & Python, C/C++, Fortran 90/95, Shell-Script, HTML/CSS/JavaScript\\
+\textsc{Software:} & UNIX/Mac/Linux, VTK/ParaView, GMT, Matlab, MPI, GIS, \LaTeX, git, VIM, etc.\\
+\textsc{Languages:} & English (fluent), Portuguese (native), Spanish (native)
+\end{tabular}
+
+%-------------------------------------------------------------------------------
+%	COMMUNICATION
+%-------------------------------------------------------------------------------
+
+\section{Communication}
+
+\begin{tabular}{p{\textwidth}}
+Received training in Public Speaking \& Leadership (at Toastmasters and UC San Diego) ~|~ Gave interviews (about my research) to {\it Los Angeles Times}, {\it The Washington Post}, {\it Reuters}, {\it BBC News}, {\it The Wall Street Journal}, among others ~|~ Wrote 6 papers, 3 articles and presented at 12 (inter)national conferences (3 awarded prizes) ~|~ Co-wrote lab grants and proposals ~|~ Reviewed papers for {\it J. Glaciol.} and {\it The Cryosphere} ~|~ Assisted in reviewing NASA and NSF proposals ~|~ Organized 2 institutional seminar series ~|~ Developed and maintain 3 websites: lab, conference and personal
+\end{tabular}
+
+%-------------------------------------------------------------------------------
+%	TEACHING EXPERIENCE
+%-------------------------------------------------------------------------------
+
+\section{Teaching}
+
+\begin{tabular}{rl}
+\textsc{Aug--Dec} 2008 & Computing for Geophysicists, T.A. at University of S\~ao Paulo\\
+\textsc{Mar--Jul} 2008 & Introduction to Geophysics, T.A. at University of S\~ao Paulo
+\end{tabular}
+
+%-------------------------------------------------------------------------------
+%	AWARDS AND HONORS
+%-------------------------------------------------------------------------------
+
+\section{Awards and Honors}
+
+\begin{tabular}{rl}
+2014 & AGU Outstanding Student Paper Award, Cryosphere\\
+2012--14 & NASA Earth and Space Science Fellowship (NESSF)\\ 
+2011 & AAAS Student Award (1st place), Atmospheric and Oceanographic Sciences\\
+2010 & AGU Outstanding Student Paper Award, Cryosphere\\
+2010 & Honor Mention (best M.S. Thesis in geophysics), University of S\~ao Paulo\\
+2008 & T.A. Fellowship (M.S.), Brazilian Ministry of Education\\
+2007--08 & Graduate Fellowship (M.S.), Brazilian Ministry of Science and Technology\\
+2007 & Honor Mention (2nd best B.S. Thesis), University of S\~ao Paulo\\
+2005--06 & Undergrad. Fellowship, S\~ao Paulo Research Foundation\\
+2004 & Undergrad. Fellowship, Brazilian Ministry of Science and Technology
+\end{tabular}
+
+%-------------------------------------------------------------------------------
+%	PUBLICATIONS
+%-------------------------------------------------------------------------------
+
+\section{Publications}
+
+%\subsection*{Journal Articles}
+\emph{Journal Articles}
+
+\begin{minipage}{\textwidth}
+\begin{flushleft}
+\begin{enumerate}
+  \item [6.] {\bf F.S.~Paolo}, H.A. Fricker, L. Padman, Developing optimal
+        decadal records of Antarctic ice-shelf height change from multiple
+        satellite radar altimeters,\\ {\it Remote. Sens. Environ.} (in review).
+  \item [5.] P.R. Holland, A.Brisbourne, H.F.J. Corr, D. McGrath, K. Purdon, 
+        J. Paden, H.A. Fricker, {\bf F.S.~Paolo}, A. Fleming, Oceanic and 
+        atmospheric forcing of Larsen C Ice-Shelf thinning,\\ {\it The Cryosphere} 
+        (2015).
+        %doi:10.5194/tc-9-1005-2015
+  \item [4.] {\bf F.S.~Paolo}, H.A. Fricker, L. Padman, Volume loss 
+        from Antarctic ice shelves is accelerating,\\ {\it Science} (2015).
+        %doi:10.1126/science.aaa0940
+  \item [3.] {\bf F.S.~Paolo}, E.C. Molina, Integrated marine 
+        gravity field along the Brazilian coast from altimeter-derived sea 
+        surface gradient and shipborne gravity,\\ {\it J. Geodyn.} (2010).
+        %doi:10.1016/j.jog.2010.04.003
+  %\item [3.] {\bf F.S.~Paolo}, Satellite altimetry and marine gravity on the
+  %      integrated representation of the gravity field, Brazil coast,
+  %      \\ {\it Master Thesis} (2009).
+  %      doi.org/10.1590/S0102-261X2010000300014
+  \item [2.] M.C. B\'icego, E. Zanardi-Lamardo, S. Taniguchi, C.C. Martins, 
+        D.A.M. da Silva, S.T. Sasaki, A.C.R. Albergaria-Barbosa, {\bf F.S.~Paolo},
+        R.R. Weber, R.C. Montone, Results from a 15-year 
+        study on hydrocarbon concentrations in water and sediment from 
+        Admiralty Bay, King George Island, Antarctica,\\ {\it Antarct. Sci.} 
+        (2009).
+        %doi:10.1017/S0954102009001734
+  \item [1.] {\bf F.S.~Paolo}, M.M. Mahiques, Utilization of 
+        acoustic methods in coastal dynamics studies: example in the 
+        Canan\'eia lagoonal mouth,\\ {\it Braz. J. Geophys.} (2008).
+        %doi:10.1590/S0102-261X2008000200008
+\end{enumerate}
+\end{flushleft}
+\end{minipage}
+
+\emph{Data Sets}
+
+\begin{minipage}{0.98\textwidth}
+\begin{enumerate}
+  \item [1.] Moholdt, G., H.A. Fricker, L. Padman and {\bf F.S. Paolo} (2013), 
+        Synthesized grounding line and ice shelf mask for Antarctica.
+        {\it Scripps Institution of Oceanography, UCSD}, 25 pp.\\
+        doi.pangaea.de/10.1594/PANGAEA.819150
+\end{enumerate}
+\end{minipage}
 
 %-------------------------------------------------------------------------------
 %	FIELD EXPERIENCE
@@ -197,107 +328,15 @@ Satellite remote sensing, ice-ocean-atmosphere interaction, ice-shelf/ice-sheet 
 \end{tabular}
 
 %-------------------------------------------------------------------------------
-%	TEACHING EXPERIENCE
-%-------------------------------------------------------------------------------
-
-\section{Teaching}
-
-\begin{tabular}{rl}
-\textsc{Aug--Dec} 2008 & Computing for Geophysicists, TA at University of S\~ao Paulo\\
-\textsc{Mar--Jul} 2008 & Introduction to Geophysics, TA at University of S\~ao Paulo
-\end{tabular}
-
-%-------------------------------------------------------------------------------
-%	AWARDS AND HONORS
-%-------------------------------------------------------------------------------
-
-\section{Awards and Honors}
-
-\begin{tabular}{rl}
-2014 & \textsc{agu} Outstanding Student Paper Award, Cryosphere\\
-2012, 2013, 2014 & \textsc{nasa} Earth and Space Science Fellowship (\textsc{nessf})\\ 
-2011 & \textsc{aaaspd} Student Award (1\textsuperscript{st} place), Atmospheric and Oceanographic Sciences\\
-2010 & \textsc{agu} Outstanding Student Paper Award, Cryosphere\\
-2010 & Honor Mention (best M.S. Thesis in geophysics), University of S\~ao Paulo\\
-2008 & TA Fellowship (M.S.), Brazilian Ministry of Education\\
-2007, 2008 & Graduate Fellowship (M.S.), Brazilian Ministry of Science and Technology\\
-2007 & Honor Mention (2\textsuperscript{nd} best B.S. Thesis), University of S\~ao Paulo\\
-2005, 2006 & Undergrad. Fellowship, S\~ao Paulo Research Foundation\\
-2004 & Undergrad. Fellowship, Brazilian Ministry of Science and Technology
-\end{tabular}
-
-%-------------------------------------------------------------------------------
-%	SKILLS 
-%-------------------------------------------------------------------------------
-
-\section{Skills}
-
-\begin{tabular}{rl}
-\textsc{~~~~Programming:} & Python, C/C++, Fortran 90/95, Shell-Script, \textsc{html}/\textsc{css}/JavaScript\\
-\textsc{Software:} & \textsc{unix}/Mac/\textsc{Linux}, \textsc{vtk}/ParaView, \textsc{gmt}, \textsc{Matlab}, \textsc{gis}, \LaTeX, git, \textsc{vim}, etc.\\
-\textsc{Languages:} & English (fluent), Portuguese (native), Spanish (native)
-\end{tabular}
-
-\begin{tabular}{rp{12.4cm}}
-\textsc{Communication:} & Received training in Public Speaking \& Leadership ~|~ Presented 7 talks and 5 posters at (inter)national meetings ~|~ Co-wrote lab grants and proposals ~|~ Reviewer for {\it Geophys. Res. Lett.}, {\it J. Glaciol.} and {\it The Cryosphere} ~|~ Organized 2 institutional seminar series ~|~ Developed and maintain 3 websites: lab, conference and personal
-\end{tabular}
-
-%-------------------------------------------------------------------------------
-%	PUBLICATIONS
-%-------------------------------------------------------------------------------
-
-\section{Publications}
-
-%\subsection*{Journal Articles}
-\emph{Journal Articles}
-
-\begin{enumerate}
-  \item [6.] {\bf F. S. Paolo}, H. A. Fricker, L. Padman, Developing optimal decadal
-        records of Antarctic ice-shelf height change from multiple satellite
-        radar altimeters, {\it Remote Sens. Environ.} (in review).
-  \item [5.] P. R. Holland, A. Brisbourne, H. F. J. Corr, D. McGrath, K. Purdon, 
-        J. Paden, H. A. Fricker, {\bf F. S. Paolo}, A. Fleming, Oceanic and 
-        atmospheric forcing of Larsen C Ice Shelf thinning, {\it The Cryosphere} 
-        (2015).
-  \item [4.] {\bf F. S. Paolo}, H.A. Fricker, L. Padman, Volume loss 
-        from Antarctic ice shelves is accelerating, {\it Science} (2015).
-        doi:10.1126/science.aaa0940
-  \item [3.] {\bf F. S. Paolo}, E. C. Molina, Integrated marine 
-        gravity field in the Brazilian coast from altimeter-derived sea 
-        surface gradient and shipborne gravity, {\it J. Geodyn.}, 50, 347-354 (2010).\\
-        doi:10.1016/j.jog.2010.04.003
-  \item [2.] M. C. B\'icego, E. Zanardi-Lamardo, S. Taniguchi, C. C. Martins, 
-        D. A. M. da Silva, S. T. Sasaki, A. C. R. Albergaria-Barbosa, {\bf F. S. 
-        Paolo}, R. R. Weber, R. C. Montone, Results from a 15-year 
-        study on hydrocarbon concentrations in water and sediment from 
-        Admiralty Bay, King George Island, Antarctica, {\it Antarct. Sci.}, 
-        21, 209-220 (2009).\\
-        doi:10.1017/S0954102009001734
-  \item [1.] {\bf F. S. Paolo}, M. M. Mahiques, Utilization of 
-        acoustic methods in coastal dynamics studies: example in the 
-        Canan\'eia lagoonal mouth, {\it Braz. J. Geophys.}, 26(2), 211-225 (2008).
-        doi:10.1590/S0102-261X2008000200008
-\end{enumerate}
-
-\emph{Datasets}
-
-\begin{enumerate}
-  \item [1.] Moholdt, G., H.A. Fricker, L. Padman and {\bf F.S. Paolo} (2013), 
-        Synthesized grounding line and ice shelf mask for Antarctica.
-        {\it Scripps Institution of Oceanography, UCSD}, 25 pp.\\
-        doi.pangaea.de/10.1594/PANGAEA.819150
-\end{enumerate}
-
-%-------------------------------------------------------------------------------
 %	INVITED TALKS
 %-------------------------------------------------------------------------------
 
-\section{Invited Talks}
-
-\begin{tabular}{rl}
-14 \textsc{Jun} 2011 & Elevation changes on Antarctic ice shelves, \textsc{aaas} Pacific Division, 92\textsuperscript{nd} Annual\\ 
-& Meeting, San Diego.
-\end{tabular}
+%\section{Invited Talks}
+%
+%\begin{tabular}{rl}
+%14 \textsc{Jun} 2011 & Elevation changes on Antarctic ice shelves, \textsc{aaas} Pacific Division, 92\textsuperscript{nd} Annual\\ 
+%& Meeting, San Diego.
+%\end{tabular}
 
 %-------------------------------------------------------------------------------
 %	ACADEMIC SERVICE
@@ -337,10 +376,10 @@ Satellite remote sensing, ice-ocean-atmosphere interaction, ice-shelf/ice-sheet 
 \section{References}
 
 \begin{small}
-\begin{tabular}{p{.95\textwidth}}
-Dr Helen A. Fricker, Remote Sensisng and Glaciology, UC San Diego, hafricker@ucsd.edu\\
-Dr Laurie Padman, Physical Oceanography, Earth \& Space Research, padman@esr.org\\
-Dr David T. Sandwell, Remote Sensing and Geodesy, UC San Diego, dsandwell@ucsd.edu
+\begin{tabular}{p{.98\textwidth}}
+Dr. Helen A. Fricker, {\it Remote Sensisng and Glaciology}, UC San Diego, hafricker@ucsd.edu\\
+Dr. Laurie Padman, {\it Physical Oceanography}, Earth \& Space Research, padman@esr.org\\
+Dr. David T. Sandwell, {\it Remote Sensing and Geodesy}, UC San Diego, dsandwell@ucsd.edu
 \end{tabular}
 \end{small}
 
